@@ -24,4 +24,11 @@ for k,v in pairs(ls) do
     print("downloading "..v.."  "..tostring(math.ceil(finished*percent)).."%")
 end
 print("Finished downloading cc-lock!")
+
+print("Downloading basalt")
+
+shell.run("wget run https://basalt.madefor.cc/install.lua packed basalt.lua master")
+
+print("Finished downloading basalt!")
+
 print("Go to your root folder and type register to setup your login!")
